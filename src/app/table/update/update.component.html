@@ -1,0 +1,10 @@
+<div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" [(ngModel)]="data.title" name="title">
+  </div>
+  <div class="form-group">
+    <label for="director">Director</label>
+    <input type="text" class="form-control" id="director" [(ngModel)]="data.director" name="director">
+  </div>
+
+  <button (click)="editMovie()">Apply</button>

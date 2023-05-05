@@ -1,0 +1,29 @@
+<h2>Add Movie</h2>
+<form (submit)="addNewMovie()">
+  <label>
+    Title:
+    <input type="text" name="title" [(ngModel)]="newMovie.title">
+  </label>
+  <br>
+  <label>
+    Director:
+    <input type="text" name="director" [(ngModel)]="newMovie.director">
+  </label>
+  <br>
+  <label>
+    Rating:
+    <input type="number" name="rating" [(ngModel)]="newMovie.rating">
+  </label>
+  <br>
+  <label>
+    Genre:
+    <input type="text" name="genre" [(ngModel)]="newMovie.genre">
+  </label>
+  <br>
+  <label>
+    ReleaseYear:
+    <input type="number" name="releaseyear" [(ngModel)]="newMovie.releaseyear">
+  </label>
+  <br>
+  <button type="submit">Add Movie</button>
+</form>
